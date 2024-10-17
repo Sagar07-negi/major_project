@@ -247,6 +247,11 @@
   color: red;
   margin: 10px 0;
 }
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .paginationbtn {
   background-color: #2980b9;
@@ -276,6 +281,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding-bottom:50px;
 }
 
 .admin-container .coursediv .course-cards {
@@ -283,6 +289,7 @@
   gap: 10px;
   flex-wrap: wrap;
   padding-left: 120px;
+  justify-content: center;
 }
 
 .admin-container .coursediv .course-card {
@@ -451,7 +458,7 @@ a:hover {
   color: #e74c3c;
 }
 .trainer-dashboard .sidebar{
-  background-color:#115799;
+  background-color:#2c3e50;
   height: 100vh;
   width:15%;
   color:#fff;
@@ -468,13 +475,17 @@ a:hover {
 .trainer-dashboard .sidebar .trainer-detail button{
   background-color: #e74c3c;
   color:#fff;
-  padding:10px 25px;
+  padding:10px 35px;
   border-radius: 4px;
   border:none;
+  font-size: 16px;
   position: absolute;
   bottom:5%;
+  left:3%;
 }
-
+.trainer-dashboard .sidebar .trainer-detail button:hover{
+  background-color: #cd301f;
+}
 
 
 /* Media Queries */
@@ -735,16 +746,15 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   border-radius: 5px;
   background-color:#2980b9;
+  background-color: #2c3e50;
   color: #fff !important;
   top:27%;
   left:40%;
-  padding:10px 15px;
+  padding:20px 30px;
 padding-top:30px;
 }
-.trainer-details,.employee-details{
-  background-color: #fff;
-  color:#000 !important;
-}
+
+
 .course-details h3,.trainer-details h3{
 text-align: center;
 margin-bottom:10px ;
@@ -752,9 +762,8 @@ margin-bottom:10px ;
 .course-details strong ,.trainer-details strong{
   color:#65b1e4;
 }
-.course-details p .trainer-details p{
-  color: #65b1e4;
-  margin-bottom:5px !important;
+.course-details p, .trainer-details p,.employee-details p{
+  margin-bottom:8px !important;
 }
 
 .trainer-dashboard .main-content {
